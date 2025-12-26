@@ -1,0 +1,1287 @@
+/* =========================
+   Circular Std
+========================= */
+
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: url('../font/CircularStd-Book.ttf');
+}
+
+@font-face {
+  font-family: 'CircularStd-Medium';
+  src: url('../font/CircularStd-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'CircularStd-MediumBold';
+  src: url('../font/circular-std-medium-500.ttf');
+}
+
+@font-face {
+  font-family: 'CircularStd-Bold';
+  src: url('../font/CircularStd-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'CircularStd-Black';
+  src: url('../font/CircularStd-Black.ttf');
+}
+
+@font-face {
+  font-family: 'CircularStd-BookItalic';
+  src: url('../font/CircularStd-BookItalic.ttf');
+}
+
+@font-face {
+  font-family: 'CircularStd-MediumItalic';
+  src: url('../font/CircularStd-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'CircularStd-BoldItalic';
+  src: url('../font/CircularStd-BoldItalic.ttf');
+}
+
+/* =========================
+   DM Sans
+========================= */
+
+@font-face {
+  font-family: 'DMSans-Regular';
+  src: url('../font/DMSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'DMSans-Medium';
+  src: url('../font/DMSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'DMSans-Bold';
+  src: url('../font/DMSans-Bold.ttf');
+}
+
+/* =========================
+   Montserrat
+========================= */
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../font/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../font/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../font/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../font/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('../font/Montserrat-ExtraBold.ttf');
+}
+
+/* Genteral css */
+
+html {
+  width: 100%;
+}
+
+
+body {
+  color: #000;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 35px;
+  list-style: none;
+}
+
+a,
+a:hover {
+  font-size: 18px;
+  text-decoration: none;
+  color: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  line-height: normal;
+}
+
+section {
+  padding: 30px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+/* ====== Banner layout ====== */
+.seo-page-new-banner {
+    background: #9E2A2B;
+}
+.seo-banner-heading {
+    line-height: 38px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 30px;
+    opacity: 1;
+    font-family: 'Montserrat-Medium';
+    text-align: center;
+        margin-bottom: 20px;
+}
+/* Main two-column layout */
+.seo-banner-main {
+  display: grid;
+  grid-template-columns: 1.6fr 1.4fr;
+  gap: 32px;
+}
+
+/* LEFT side */
+.seo-banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.seo-banner-image-wrap {
+  padding: 8px;
+}
+
+.seo-banner-image-wrap img {
+  width: 100%;
+  display: block;
+}
+.seo-banner-description {
+    padding: 14px 18px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    font-family: DMSans-Regular;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 28px;
+    text-align: center;
+}
+/* Stats row */
+.seo-banner-stats {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.seo-stat-item {
+  flex: 1 1 120px;
+  text-align: center;
+}
+
+.seo-stat-number {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat-Medium';
+    margin-bottom: 10px;
+}
+.seo-stat-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'DMSans-Regular';
+    margin-bottom: 10px;
+}
+/* RIGHT side */
+.seo-banner-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Admission stages card (matches reference look) */
+.seo-admission-card {
+    padding: 15px;
+    color: #fff;
+    background: #fff;
+}
+
+.seo-admission-header {
+    padding: 10px 14px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Montserrat-Medium';
+}
+.seo-admission-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.6fr;
+  background: #ffffff;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.seo-admission-row:last-child {
+  border-bottom: none;
+}
+
+.seo-admission-stage {
+    padding: 12px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Montserrat-Medium';
+}
+
+/* Different colours like reference */
+.stage-foundation { background: #8b1f23; }
+.stage-preparatory { background: #d48a12; }
+.stage-middle { background: #8b1f23; }
+.stage-secondary { background: #d48a12; }
+
+.seo-admission-grade {
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: 'DMSans-Regular';
+    color: #000;
+}
+/* Buttons (Apply Now / Campus Visit) */
+.New_btn_main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.Seo_new_btn a,
+.Seo_new_btn-new a {
+  display: inline-block;
+  padding: 10px 26px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}.seo-banner-right .Seo_new_btn a {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.seo-banner-right .Seo_new_btn a:hover {
+    color: #000;
+}
+
+
+/* seo 1 section */
+section.intro_new_seo {
+  padding: 60px 0;
+  background: #F9F9F9;
+}
+
+h2.seo_new_heading {
+  line-height: 38px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  color: #0a0a0a;
+  font-size: 30px;
+  opacity: 1;
+  font-family: 'Montserrat-Medium';
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.new_adminssion_sub h3 {
+  font-size: 22px;
+  font-family: 'DMSans-Medium';
+  margin: 10px 0;
+}
+
+.new_adminssion_sub p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 25px;
+  text-align: center;
+}
+
+.intro_new_seo p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 17px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px 0;
+  line-height: 28px;
+}
+
+/* Our Campus  */
+section.New_our_campus {
+  background: #FFECEC;
+  padding: 60px 0;
+}
+
+.our_campus_conent p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+}
+
+.Seo_new_btn {
+  margin-top: 15px;
+}
+
+.Seo_new_btn-new {
+  margin-top: 15px;
+}
+
+.New_btn_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.Seo_new_btn-new a:hover {
+  background: #F9F9F9;
+  border: 1px solid #FED62E;
+}
+
+.Seo_new_btn-new a {
+  color: #000;
+  background: #FFCE00;
+  border-radius: 5px;
+  border: 1px solid rgba(158, 42, 43, 0.18);
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: 'DMSans-Medium';
+  transition: all 1s ease;
+}
+
+.Seo_new_btn a {
+  color: #fff;
+  background: #9E2A2B;
+  border-radius: 5px;
+  border: 1px solid rgba(158, 42, 43, 0.18);
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: 'DMSans-Medium';
+  transition: all 1s ease;
+}
+
+.Seo_new_btn a:hover {
+  color: #9E2A2B;
+  background: #FFECEC;
+  border: 1px solid;
+}
+
+h2.seo_new_heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 300px;
+  height: 2px;
+  background-color: #9E2A2B;
+  transform: translateX(-50%);
+}
+
+.our_academics_section p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.our_academics_main {
+  padding-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+section.our_academics_section {
+  padding: 60px 0;
+  background: #F9F9F9;
+}
+
+.our_academics_new {
+  background: #C1586B;
+  padding: 15px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.our_conent_div {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.our_conent_div h3 {
+  font-size: 22px;
+  font-family: 'DMSans-Medium';
+  color: #fff;
+  margin: 10px 0;
+}
+
+.our_conent_div h4 {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Montserrat-Medium';
+  margin: 10px 0;
+}
+
+.our_conent_div a {
+  background: #335C67;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'DMSans-Medium';
+}
+
+section.new_admission_process {
+  padding: 60px 0;
+  background-image: url(https://cmrgandhipublicschool.com/wp-content/uploads/2025/12/new-background.png);
+}
+
+.new_admission_main {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.new_adminssion_sub {
+  border: 2px solid;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.new_adminssion_1.new_adminssion_sub {
+  border-color: #9E2A2B;
+}
+
+.new_adminssion_2.new_adminssion_sub {
+  border-color: #994874;
+}
+
+.new_adminssion_3.new_adminssion_sub {
+  border-color: #F39C12;
+}
+
+.new_adminssion_4.new_adminssion_sub {
+  border-color: #335C67;
+}
+
+.icon_admission i {
+  padding: 20px;
+  font-size: 18px;
+  border: 2px solid;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.new_adminssion_1.new_adminssion_sub i {
+  border-color: #9E2A2B;
+  color: #9E2A2B;
+}
+
+.new_adminssion_2.new_adminssion_sub i {
+  border-color: #994874;
+  color: #994874;
+}
+
+.new_adminssion_3.new_adminssion_sub i {
+  border-color: #F39C12;
+  color: #F39C12;
+}
+
+.new_adminssion_4.new_adminssion_sub i {
+  border-color: #335C67;
+  color: #335C67;
+}
+
+section.need_help_section {
+  padding: 60px 0;
+  background: #F9F9F9;
+}
+
+.need_help_section p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 25px;
+  text-align: center;
+}
+
+.img-gallery h4 {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+  font-family: 'DMSans-Regular';
+}
+
+.gallery-h4 {
+  transform: translateY(-65px);
+  background: linear-gradient(360deg, rgb(16 16 16 / .8) 0%, #fff0 100%);
+  padding-top: 20px;
+}
+
+.gallery-main-div {
+  text-align: center;
+}
+
+.extrat_new_icon {
+  margin-top: 30px;
+}
+
+.extrat_new_conent p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+section.extra_new_section {
+  background: #FCF9ED;
+  padding: 60px 0;
+}
+
+.why_cmr_div_1 p {
+  overflow: hidden;
+  color: #fff;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+section.why_cmr_section {
+  padding: 60px 0;
+  background: #C1586B;
+}
+
+.why_cmr_div_1 h2.seo_new_heading {
+  color: #fff;
+}
+
+.why_cmr_div_1 h2.seo_new_heading::after {
+  background: #fff;
+}
+
+.why_cmr_div_2 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.why_cmr_sub_new {
+  padding: 30px 20px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 32%;
+}
+
+.why_cmr_sub_new img {
+  border-radius: 20px;
+}
+
+.why_cmr_conent h3 {
+  font-size: 25px;
+  font-family: 'DMSans-Medium';
+  margin: 10px 0;
+  color: #fff;
+  line-height: 30px;
+}
+
+.why_cmr_conent p {
+  overflow: hidden;
+  color: #fff;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.why_cmr_conent {
+  margin-top: 20px;
+}
+
+.Unique_new p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.Philosophy_sub_conent p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+}
+
+.Philosophy_sub_conent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.Unique_new {
+  padding: 60px 0;
+  background: #F9F9F9;
+}
+
+section.philosophy_section_new {
+  padding: 60px 0;
+  background: #FFECEC;
+}
+
+section.details_contact_section {
+  padding: 60px 0;
+  background-image: url(https://cmrgandhipublicschool.com/wp-content/uploads/2025/12/whatsap-doodle.png);
+  background-size: contain;
+}
+
+.details_contact_section p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.latest_bus_section p {
+  overflow: hidden;
+  color: #393434;
+  font-size: 16px;
+  font-family: DMSans-Regular;
+  font-weight: 400;
+  margin: 5px 0;
+  line-height: 28px;
+  text-align: center;
+}
+.new_fquestion::after {
+  content: "+";
+  float: right;
+  font-size: 20px;
+}
+
+.new_seo_faq_loop.new_active .new_fquestion::after {
+  content: "−";
+}
+
+.new_seo_faq_loop [itemprop="acceptedAnswer"] {
+  display: none;
+}
+
+.new_seo_faq_loop.new_active [itemprop="acceptedAnswer"] {
+  display: block;
+}
+/* Answer wrapper – default hidden */
+.new_seo_faq_loop [itemprop="acceptedAnswer"] {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 
+    max-height 0.8s ease-in-out,
+    opacity 0.5s ease-in-out;
+}
+h3.new_sec_heading {
+    line-height: 38px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #0a0a0a;
+    font-size: 30px;
+    opacity: 1;
+    font-family: 'Montserrat-Medium';
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+h3.new_fquestion.new_collapsed {
+    padding: 20px;
+        background-color: #FFECEC;
+    color: #0e0d0d;
+    width: 100%;
+    border: 1px solid #FFECEC;
+    outline: 0;
+    font-size: 16px;
+    transition: 0.4s;
+    font-family: DMSans-Medium;
+}
+.new_mb-3.new_seo_faq_loop {
+    margin-bottom: 10px;
+}
+.new_seo_conent {
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    border: 1px solid #FFECEC;
+    outline: 0;
+    transition: 0.4s;
+}
+.New_test_seo p {
+    overflow: hidden;
+    color: #393434;
+    font-size: 16px;
+    font-family: DMSans-Regular;
+    font-weight: 400;
+    margin: 5px 0;
+    line-height: 28px;
+}
+/* When active */
+.new_seo_faq_loop.new_active [itemprop="acceptedAnswer"] {
+  max-height: 1200px; /* enough for long content */
+  opacity: 1;
+}
+
+.new_bus_route_img img {
+  object-fit: none;
+}
+.what_parents_section {
+    padding: 60px 0;
+        background: #FFECEC;
+}
+section.new_cmr_faqlast {
+    padding: 60px 0;
+    background-image: url(https://cmrgandhipublicschool.com/wp-content/uploads/2025/12/yellow-image-1.png);
+}
+.parents-video-carousel .owl-nav, .parents-text-carousel .owl-nav {
+    display: none;
+}
+
+.parents-wrapper .parents-video-carousel, .parents-wrapper .parents-text-carousel {
+        width: 50%;
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+}
+.parents-text-carousel .text-item h3 {
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #0a0a0a;
+    font-size: 30px;
+    opacity: 1;
+    font-family: 'Montserrat-Medium';
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.text-item img.quote-img {
+    width: 60px;
+}
+.star {
+  font-size: 18px;
+  color: #d1d1d1; /* empty star */
+}
+
+.star.filled {
+  color: #f5b301; /* gold */
+}
+video.parent-video {
+    border-radius: 15px;
+}
+.parents-text-carousel .text-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.parents-text-carousel .text-item p {
+    overflow: hidden;
+    color: #393434;
+    font-size: 16px;
+    font-family: DMSans-Regular;
+    font-weight: 400;
+    margin: 5px 0;
+    line-height: 28px;
+    border-bottom: 3px solid #9E2A2B;
+    padding-bottom: 20px;
+}
+.parents-text-carousel .text-item h4{
+    font-size: 18px;
+    font-family: 'DMSans-Medium';
+    margin: 10px 0;
+    line-height: 30px;
+}
+.parents-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 50px;
+    background: #fff;
+}
+.new-latest-news-section {
+    padding: 60px 0;
+    background: #F9F9F9;
+}
+
+section.global_brand_section {
+    background: #FFECEC;
+    padding-top: 60px;
+}
+.brand-carousel {
+    padding-top: 30px;
+}
+.brand-carousel .brand-logo img {
+    width: 250px;
+}
+.new-latest-news-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:24px;
+}
+.new-latest-news-header h2{
+    font-size:24px;
+    margin:0;
+    color:#9E2A2B;
+}
+.new-latest-news-header p{
+    color:#393434;
+    font-size:16px;
+    font-family:DMSans-Regular;
+    margin:5px 0;
+    line-height:25px;
+}
+
+/* GRID */
+.new-latest-news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top: 30px;
+}
+
+
+/* CARD */
+.new-news-card{
+    background:#fff;
+    border-radius:5px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    display:flex;
+    flex-direction:column;
+}
+.new-news-card-image{
+    position:relative;
+    width:100%;
+    height:180px;
+    overflow:hidden;
+}
+.new-news-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* TAG */
+.new-news-tag{
+    position:absolute;
+    top:12px;
+    left:12px;
+    padding:4px 12px;
+    border-radius:999px;
+    font-size:11px;
+    color:#fff;
+}
+.new-news-tag.events{background:#f39c12;}
+.new-news-tag.achievements{background:#27ae60;}
+.new-news-tag.academics{background:#c0392b;}
+
+/* BODY */
+.new-news-body{
+    padding:16px 18px 18px;
+    display:flex;
+    flex-direction:column;
+}
+.new-news-date{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:12px;
+    color:#777;
+    margin-bottom:8px;
+}
+.new-news-date i{color:#9E2A2B;}
+.new-news-date span{font-family:'DMSans-Medium';}
+
+.new-news-title{
+    font-size:16px;
+    color:#9E2A2B;
+    margin:0 0 8px;
+    font-family:'DMSans-Medium';
+}
+.new-news-text{
+    font-size:14px;
+    color:#555;
+    line-height:1.5;
+    margin:0 0 12px;
+    font-family:DMSans-Regular;
+}
+
+.new-news-footer{margin-top:auto;}
+.new-readmore{
+    font-size:12px;
+    color:#9E2A2B;
+    text-decoration:none;
+    display:inline-flex;
+    gap:4px;
+}
+.new-readmore:hover{text-decoration: underline; font-size: 12px; color: #9E2A2B;}
+section.new_list_section {
+    padding: 60px 0;
+    background: url(https://cmrgandhipublicschool.com/wp-content/themes/ed-school/new-assets/images/new-cmr.png);
+}
+.New-list_div_main {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.New-list_div_sub {
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+.New-list_div_sub img {
+    width: 80px;
+    margin: 20px 0;
+}
+.New-list_div_sub h3 {
+    line-height: 38px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #ffff;
+    font-size: 20px;
+    opacity: 1;
+    font-family: 'Montserrat-Medium';
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+section.new_seo_section {
+    padding: 60px 0;
+}
+.new_seo_main-div {
+    display: flex;
+    gap: 20px;
+}
+.new_seo_sub {
+    width: 32%;
+    padding: 20px;
+    border: 2px solid #9E2A2B;
+    border-radius: 15px;
+    background: #FFECEC;
+}
+.new_seo_sub h3 {
+    line-height: 38px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 1;
+    font-family: 'Montserrat-Medium';
+}
+.new_seo_sub p {
+    color: #393434;
+    font-size: 17px;
+    font-family: DMSans-Regular;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 28px;
+}
+.new_seo_sub h4 {
+    line-height: 38px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 1;
+    font-family: 'Montserrat-Medium';
+}
+.new_seo_sub li {
+    color: #393434;
+    font-size: 15px;
+    font-family: DMSans-Regular;
+    font-weight: 600;
+    margin: 5px 0;
+    line-height: 25px;
+}
+.award_new {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/* responsive */
+
+
+@media screen and (max-width: 2500px) {}
+
+@media screen and (max-width: 1700px) {}
+
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1300px) {
+  .our_campus_conent p {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 25px;
+  }
+
+  .intro_new_seo p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .Philosophy_sub_conent p {
+    font-size: 12px;
+    margin: 5px 0;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .brand-carousel .brand-logo img {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .seo-banner-main {
+    grid-template-columns: 1fr;
+  }
+  .seo-banner-stats {
+    margin-top: 30px;
+}
+  .new_seo_main-div {
+    flex-direction: column;
+}
+.new_seo_sub {
+    width: 100%;
+}
+  .New-list_div_main {
+    grid-template-columns: 1fr 1fr;
+}
+    .new-latest-news-grid{grid-template-columns:repeat(2,1fr);}
+  .Philosophy_sub_conent p {
+        text-align: center;
+    }
+  .parents-wrapper {
+    flex-direction: column;
+}
+.parents-wrapper .parents-video-carousel, .parents-wrapper .parents-text-carousel {
+    width: 100%;
+}
+  .why_cmr_sub_new {
+    width: 48%;
+  }
+
+  .new_admission_main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .our_academics_new {
+    width: 48.92%;
+  }
+
+  .our_academics_main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .our_academics_main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .our_campus_conent {
+    margin-top: 15px;
+  }
+
+  .our_campus_conent p {
+    text-align: center;
+  }
+
+  .Seo_new_btn {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+    .seo-banner-heading {
+    font-size: 22px;
+    padding: 10px 14px;
+  }
+
+  .seo-admission-header {
+    font-size: 18px;
+  }
+
+  .seo-admission-row {
+    grid-template-columns: 1fr;
+  }
+
+  .seo-admission-stage {
+    text-align: left;
+  }
+
+  .New_btn_main {
+    flex-direction: column;
+  }
+
+  .Seo_new_btn a,
+  .Seo_new_btn-new a {
+    width: 100%;
+    text-align: center;
+  }
+      .new-latest-news-header{flex-direction:column;align-items:flex-start;}
+    .new-latest-news-grid{grid-template-columns:1fr;}
+  .Seo_new_btn-new a {
+    font-size: 14px;
+}
+  .why_cmr_sub_new {
+    width: 100%;
+  }
+
+  .New_btn_main {
+
+    flex-direction: column;
+  }
+
+  .new_admission_main {
+    grid-template-columns: 1fr;
+  }
+
+  h2.seo_new_heading {
+    line-height: 35px;
+    font-size: 25px;
+  }
+
+  .our_academics_new {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .New-list_div_main {
+        grid-template-columns: 1fr;
+    }
+
+  h2.seo_new_heading::after {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Seo_new_btn a {
+    font-size: 10px;
+  }
+
+  .Seo_new_btn-new a {
+
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {}
+
