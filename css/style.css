@@ -1206,6 +1206,10 @@ section.new_seo_section {
 }
 
 @media screen and (max-width: 768px) {
+     .parents-wrapper {
+    padding: 20px;
+
+}
     .seo-banner-heading {
     font-size: 22px;
     padding: 10px 14px;
@@ -1284,4 +1288,5 @@ section.new_seo_section {
 }
 
 @media screen and (max-width: 375px) {}
+
 
